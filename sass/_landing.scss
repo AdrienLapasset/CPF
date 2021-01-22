@@ -92,12 +92,18 @@
   .meilleur-allie {
     background-image: url("/assets/meilleur-allie-bg.jpg");
     background-size: cover;
-    background-position: center left;
+    background-position: center;
+    @include media-breakpoint-up(sm) {
+      background-position: center left;
+    }
   }
   .les-formations {
     background-image: url("/assets/les-formations.jpg");
     background-size: cover;
-    background-position: top right;
+    background-position: left center;
+    @include media-breakpoint-up(lg) {
+      background-position: center;
+    }
     ul {
       margin-top: 40px;
       color: $blue;
