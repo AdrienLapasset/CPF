@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@0,400,500,700,900&display=swap");
 *,
 p,
@@ -254,7 +253,7 @@ strong {
 }
 
 .landing .comment-ca-marche {
-  background-image: url("/assets/comment-ça-marche.jpg");
+  background-image: url("/assets/comment-ca-marche.jpg");
   background-size: cover;
   background-position: top left;
 }
