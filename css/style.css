@@ -570,6 +570,10 @@ strong {
   margin-left: 10px;
 }
 
+.formulaire__nav-btn img {
+  width: 25px;
+}
+
 .formulaire__input + label.error, .formulaire__radio input + .error {
   color: #e1000f;
   opacity: 0;
