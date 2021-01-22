@@ -1,0 +1,181 @@
+.formulaire {
+  &__block {
+    margin: 30px 0 100px;
+    display: flex;
+    padding: 20px;
+    @include media-breakpoint-up(sm) {
+      min-height: 505px;
+      padding: 20px 40px;
+    }
+    & > * {
+      @include media-breakpoint-up(sm) {
+        flex-shrink: 1;
+        flex-basis: 40px;
+      }
+      &:nth-child(2) {
+        flex-grow: 1;
+        flex-basis: auto;
+      }
+    }
+  }
+  &__explications {
+    color: $blue;
+    font-size: 18px;
+    font-weight: 700;
+    @include media-breakpoint-up(lg) {
+      font-size: 25px;
+    }
+  }
+  &__steps-container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__step-container {
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    display: none;
+    left: 20px;
+    opacity: 0;
+  }
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+  &__step {
+    color: red;
+  }
+  &__heading {
+    color: $blue;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__input {
+    width: 100%;
+    background-color: $grey;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    &::placeholder {
+      color: $grey-dark;
+    }
+    &--select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position-x: 99%;
+      background-position-y: 8px;
+    }
+    & + label.error {
+      @extend %error-message;
+      text-align: left;
+      position: relative;
+      top: -15px;
+      margin-bottom: -15px;
+      padding-left: 20px;
+    }
+  }
+  &__radio {
+    cursor: pointer;
+    margin-bottom: 5px;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 700;
+      width: 100%;
+      height: 42px;
+      &:hover {
+        color: $blue;
+        border-color: $blue;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 20px;
+      }
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+      &:checked ~ span {
+        color: white;
+        background-color: $blue;
+        border-color: $blue;
+      }
+      & + .error {
+        @extend %error-message;
+        position: absolute;
+        bottom: -25px;
+        left: 0px;
+        @include media-breakpoint-up(lg) {
+          left: 20px;
+        }
+      }
+    }
+  }
+  &__text {
+    font-size: 15px;
+    margin-bottom: 15px;
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+    }
+  }
+  &__text-small {
+    display: none;
+    font-size: 12px;
+    @include media-breakpoint-up(lg) {
+      font-size: 14px;
+    }
+  }
+  &__btn {
+    display: none;
+  }
+  &__nav-btn {
+    transition: transform 0.4s;
+    &.active {
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+    }
+    &#prevBtn {
+      display: none;
+    }
+    &#nextBtn {
+      background-color: $red;
+    }
+  }
+}
+
+%error-message {
+  color: $red;
+  opacity: 0;
+  animation: fade-in 0.4s forwards;
+  font-size: 12px;
+  @include media-breakpoint-up(lg) {
+    font-size: 14px;
+  }
+  img {
+    width: 12px;
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}

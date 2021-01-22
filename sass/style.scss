@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@0,400,500,700,900&display=swap");
+
+@import "../modules/bootstrap-4.5.3/scss/functions";
+@import "../modules/bootstrap-4.5.3/scss/variables";
+@import "../modules/bootstrap-4.5.3/scss/mixins/_breakpoints";
+
+$red: #e1000f;
+$blue: #174195;
+$grey: #f3f5fa;
+$grey-dark: #969696;
+
+@import "base";
+@import "landing";
+@import "formulaire";

@@ -1,0 +1,64 @@
+.header {
+  .navbar {
+    .navbar-brand {
+      .ma-formation-cpf {
+        border-left: 4px solid $red;
+        padding-left: 20px;
+        font-size: 37px;
+        font-weight: 900;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+    }
+    .nav-link {
+      img {
+        height: 100px;
+      }
+    }
+  }
+}
+.landing {
+  .hero {
+    background-image: url("/assets/hero-bg.jpg");
+    background-size: cover;
+    background-position: center top;
+    padding: 30px 0;
+    .formations-gratuites {
+      p {
+        color: white;
+        &:first-child {
+          font-size: 40px;
+          font-weight: 700;
+          margin-bottom: 20px;
+        }
+        &:nth-child(2) {
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+        &:last-child {
+          font-size: 22px;
+          color: $red;
+          font-weight: 700;
+        }
+      }
+    }
+    .teste-eligibilite {
+      background-color: white;
+      border-radius: 20px;
+      padding: 30px 40px;
+      &__title {
+        margin-bottom: 30px;
+        & > * {
+          color: red;
+        }
+        h1 {
+          font-size: 32px;
+          margin-bottom: 5px;
+        }
+        aside {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
