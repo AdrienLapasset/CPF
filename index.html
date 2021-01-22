@@ -72,7 +72,7 @@
     <section class="hero">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 d-flex align-items-center">
             <div class="formations-gratuites">
               <p>
                 Formations 100% gratuites
@@ -83,6 +83,7 @@
               </p>
               <p>
                 Je teste mon éligibilité
+                <img class="ml-3" src="/assets/icons8-right_arrow-red.svg" alt="">
               </p>
             </div>
 
@@ -109,7 +110,6 @@
 
                 <!-- Step 2 -->
                 <section class="formulaire__step-container" id="step2">
-                  <aside class="formulaire__step">2eme ÉTAPE</aside>
                   <h2 class="formulaire__heading">Je suis actuellement…</h2>
                   <div class="formulaire__input-container">
                     <label class="formulaire__radio">
@@ -137,7 +137,6 @@
 
                 <!-- Step 3 -->
                 <section class="formulaire__step-container" id="step3">
-                  <aside class="formulaire__step">Encore 3 questions</aside>
                   <h2 class="formulaire__heading">Quelques informations sur mon entreprise actuelle :</h2>
                   <div class="formulaire__input-container">
                     <input class="formulaire__input" name="function" placeholder="Ma fonction" type="text">
@@ -153,7 +152,6 @@
 
                 <!-- Step 4 -->
                 <section class="formulaire__step-container" id="step4">
-                  <aside class="formulaire__step">Encore 2 questions</aside>
                   <h2 class="formulaire__heading">J’appartiens à la tranche d’âge suivante :</h2>
                   <div class="formulaire__input-container">
                     <label class="formulaire__radio">
@@ -181,7 +179,6 @@
 
                 <!-- Step 5 -->
                 <section class="formulaire__step-container" id="step5">
-                  <aside class="formulaire__step">Dernière question</aside>
                   <h2 class="formulaire__heading">J’ai un niveau d’étude…</h2>
                   <div class="formulaire__input-container">
                     <label class="formulaire__radio">
@@ -218,17 +215,19 @@
                   </div>
                 </section>
 
-                <button type="button" class="formulaire__nav-btn" id="prevBtn">
-                  Précédent
-                </button>
-
-                <button type="button" class="formulaire__nav-btn" id="nextBtn">
-                  Suivant
-                </button>
-
-                <button type="submit" class="formulaire__btn" id="submitBtn">
-                  Terminer
-                </button>
+                <div class="d-flex">
+                  <button type="button" class="formulaire__nav-btn" id="prevBtn">
+                    <img src="/assets/icons8-left_arrow.svg" alt="">
+                    Précédent
+                  </button>
+                  <button type="button" class="formulaire__nav-btn" id="nextBtn">
+                    Suivant
+                    <img src="/assets/icons8-right_arrow.svg" alt="">
+                  </button>
+                  <button type="submit" class="formulaire__btn" id="submitBtn">
+                    Terminer
+                  </button>
+                </div>
 
                 <p class="formulaire__text-small mt-3">En cliquant ci-dessus sur terminer, vous acceptez nos conditions<br class="d-none d-lg-block"> générales d'utilisation et notre politique de confidentialité.</p>
 

@@ -9,7 +9,6 @@ h5,
 h6,
 label,
 ul {
-  color: #174195;
   margin: 0;
   padding: 0;
 }
@@ -21,7 +20,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: #174195;
   font-size: 18px;
   height: 100%;
   display: -webkit-box;
@@ -87,7 +85,7 @@ strong {
   background-image: url("/assets/hero-bg.jpg");
   background-size: cover;
   background-position: center top;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .landing .hero .formations-gratuites p {
@@ -189,6 +187,7 @@ strong {
 }
 
 .formulaire__step-container {
+  min-height: 200px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -224,6 +223,7 @@ strong {
 }
 
 .formulaire__input {
+  color: black;
   width: 100%;
   background-color: #f3f5fa;
   height: 42px;
@@ -359,20 +359,44 @@ strong {
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
+  border-radius: 30px;
+  height: 40px;
+  padding: 0 20px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 768px) {
   .formulaire__nav-btn.active {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 .formulaire__nav-btn#prevBtn {
-  display: none;
+  color: #174195;
+}
+
+.formulaire__nav-btn#prevBtn img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-right: 10px;
 }
 
 .formulaire__nav-btn#nextBtn {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #e1000f;
+  margin-left: auto;
+}
+
+.formulaire__nav-btn#nextBtn img {
+  margin-left: 10px;
 }
 
 .formulaire__input + label.error, .formulaire__radio input + .error {

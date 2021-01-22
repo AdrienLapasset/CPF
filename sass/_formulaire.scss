@@ -31,6 +31,7 @@
     flex-direction: column;
   }
   &__step-container {
+    min-height: 200px;
     flex-direction: column;
     position: relative;
     width: 100%;
@@ -54,6 +55,7 @@
     margin-bottom: 10px;
   }
   &__input {
+    color: black;
     width: 100%;
     background-color: $grey;
     height: 42px;
@@ -144,16 +146,31 @@
   }
   &__nav-btn {
     transition: transform 0.4s;
+    border-radius: 30px;
+    height: 40px;
+    padding: 0 20px;
+    display: none;
+    align-items: center;
     &.active {
       @include media-breakpoint-up(md) {
-        display: block;
+        display: flex;
       }
     }
     &#prevBtn {
-      display: none;
+      color: $blue;
+      img {
+        transform: rotate(180deg);
+        margin-right: 10px;
+      }
     }
     &#nextBtn {
+      color: $white;
+      display: flex;
       background-color: $red;
+      margin-left: auto;
+      img {
+        margin-left: 10px;
+      }
     }
   }
 }

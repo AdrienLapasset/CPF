@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
   jQuery.extend(jQuery.validator.messages, {
-    required: "<img src='/assets/icons/chevron-small.svg'>Veuillez remplir ce champ",
-    email: "<img src='/assets/icons/chevron-small.svg'>Adresse email incorrect",
+    required: "<img src='/assets/chevron-small.svg'>Veuillez remplir ce champ",
+    email: "<img src='/assets/chevron-small.svg'>Adresse email incorrect",
   });
 
   var step = 1
@@ -45,16 +45,16 @@ $(document).ready(function () {
       },
       messages: {
         status: {
-          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionnez un élément dans la liste",
+          required: "<img src='/assets/chevron-small.svg'>Sélectionnez un élément dans la liste",
         },
         effective: {
-          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionnez un élément dans la liste",
+          required: "<img src='/assets/chevron-small.svg'>Sélectionnez un élément dans la liste",
         },
         age: {
-          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionnez un élément dans la liste",
+          required: "<img src='/assets/chevron-small.svg'>Sélectionnez un élément dans la liste",
         },
         level: {
-          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionnez un élément dans la liste",
+          required: "<img src='/assets/chevron-small.svg'>Sélectionnez un élément dans la liste",
         },
       }
     });
