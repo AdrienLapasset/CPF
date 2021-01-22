@@ -25,43 +25,18 @@
             <span>CPF</span>
           </h1>
         </div>
-
-        <!-- Search bar mobile -->
-        <div class="d-lg-none ml-auto">
-          <div class="search">
-            <button class="search__btn">
-              <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.63 43.63">
-                <path d="M21,3a17,17,0,0,0,0,34,16.79,16.79,0,0,0,9.09-2.66L42.38,46.62l4.24-4.24L34.5,30.28A17,17,0,0,0,21,3Zm0,4A13,13,0,1,1,8,20,13,13,0,0,1,21,7Z" transform="translate(-4 -3)" />
-              </svg>
-            </button>
-            <form class="search__form">
-              <input class="search__input" placeholder="Tapez un mot clé" />
-              <img class="search__clear" src="/assets/icons/clear-search-btn.png" alt="effacer">
-            </form>
-          </div>
-        </div>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-c-tag="Toggle navigation">
-          <img src="/assets/icons/menu.svg" alt="Menu">
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <!-- Container -->
-          <div class="container">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <img src="assets/logo-ministere.png" alt="flèche">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <img src="assets/logo-mcf.jpg" alt="flèche">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- End container -->
-        </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="assets/logo-ministere.png" alt="flèche">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img src="assets/logo-mcf.jpg" alt="flèche">
+            </a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -74,10 +49,10 @@
         <div class="row">
           <div class="col-lg-6 d-flex align-items-center">
             <div class="formations-gratuites">
-              <p>
+              <h2 class="c-heading">
                 Formations 100% gratuites
                 Grâce à un financement à 100% par l’Etat
-              </p>
+              </h2>
               <p>
                 Grâce à votre compte formation CPF, faites financer jusqu’à 100% de votre formation !
               </p>
@@ -93,7 +68,7 @@
             <form class="formulaire teste-eligibilite" id="testForm">
 
               <div class="teste-eligibilite__title">
-                <h1>Je teste mon éligibilité</h1>
+                <h2 class="c-heading">Je teste mon éligibilité</h2>
                 <aside>Répondez à ce questionnaire pour connaître votre éligibilité au reste à charge 0€</aside>
               </div>
 
@@ -207,8 +182,8 @@
                 <!-- Step 6 -->
                 <section class="formulaire__step-container" id="step6">
                   <h2 class="formulaire__heading green">Bonne nouvelle Nathalie !</h2>
-                  <p class="formulaire__text">Il semblerait que votre situation actuelle vous permette<br class="d-none d-lg-block">de bénéficier de plusieurs dispositifs de financement.</p>
-                  <p class="formulaire__text mb-4">Echangeons sur votre projet afin de définir lesquels pourront<br class="d-none d-lg-block">financer jusqu’à 100% votre formation !</p>
+                  <p class="formulaire__text">Il semblerait que votre situation actuelle vous permettede bénéficier de plusieurs dispositifs de financement.</p>
+                  <p class="formulaire__text mb-4">Echangeons sur votre projet afin de définir lesquels pourrontfinancer jusqu’à 100% votre formation !</p>
                   <div class="formulaire__input-container">
                     <input class="formulaire__input" placeholder="Adresse email" type="email" name="email">
                     <input class="formulaire__input" placeholder="Numéro de téléphone" type="text" name="phone">
@@ -224,12 +199,12 @@
                     Suivant
                     <img src="/assets/icons8-right_arrow.svg" alt="">
                   </button>
-                  <button type="submit" class="formulaire__btn" id="submitBtn">
+                  <button type="submit" class="formulaire__nav-btn" id="submitBtn">
                     Terminer
                   </button>
                 </div>
 
-                <p class="formulaire__text-small mt-3">En cliquant ci-dessus sur terminer, vous acceptez nos conditions<br class="d-none d-lg-block"> générales d'utilisation et notre politique de confidentialité.</p>
+                <p class="formulaire__text-small mt-3">En cliquant ci-dessus sur terminer, vous acceptez nos conditions générales d'utilisation et notre politique de confidentialité.</p>
 
               </div>
 
@@ -257,7 +232,7 @@
         <div class="row">
           <div class="col-lg-6 offset-lg-6">
             <h2 class="c-heading mb-4">Les formations</h2>
-            <p>Les formations éligibles à un financement via le CPF sont définies par la loi « Liberté de choisir son avenir professionnel ».
+            <p>Les formations éligibles à un financement via le CPF sont définies par la loi « Liberté de choisir son avenir professionnel ».<br>
               Ces formations peuvent vous aider à réaliser les objectifs suivants :
             </p>
             <ul>
@@ -292,6 +267,68 @@
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comment-ca-marche">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="c-heading mb-4">Le CPF : comment ça marche&nbsp;?</h2>
+            <p>Grâce à vos droits CPF, vous pouvez financer des formations certifiantes ou qualifiantes. Vous avez 2 minutes ?</p><br>
+            <p>Cette vidéo vous explique tout sur le fonctionnement du CPF et sur comment en bénéficier !</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="besoin">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-3 d-flex justify-content-center align-items-center">
+            <img class="img-fluid mb-4" src="assets/logo-mcf-white.png" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2 class="c-heading mb-4">
+              Ais-je besoin de l’accord de mon employeur pour bénéficier de mon CPF&nbsp;?
+            </h2>
+            <p>Votre compte est personnel et vous permet d’utiliser votre cagnotte pour vous former de façon individuelle ! Un accord de l’employeur ne sera utile que dans le cas ou votre formation s’effectue sur votre temps de travail et/ou que vous souhaitez faire participer votre entreprise au financement de votre formation.</p><br>
+            <p>Bon à savoir : en cas de demande de formation à l'employeur, ce dernier dispose d'un mois pour donner sa réponse. L'absence de réponse sera considérée comme une acceptation tacite&nbsp;!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 d-flex justify-content-center align-items-center">
+            <img class="img-fluid mb-4" src="assets/logo-500-euros.png" alt="">
+          </div>
+          <div class="col-lg-9">
+            <h2 class="c-heading mb-4">
+              Ma cagnotte CPF, c’est 500 euros par an&nbsp;!
+            </h2>
+            <p>Votre compte personnel est alimenté chaque année de 500 euros TTC. Les cotisations sont plafonnées à 5000 euros. Le plafond peut aller jusqu’à 8000 euros pour les salariés les moins qualifiés (n’ayant pas de CAP).</p><br>
+            <p>La somme cotisée est accessible à n’importe quel moment de votre carrière. Vous pouvez ainsi la mobiliser à tout instant dans le cadre d’un projet de formation&nbsp;!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-legales">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-center">
+            <h2 class="c-heading mb-4">
+              Informations légales
+            </h2>
+          </div>
+          <div class="col-lg-1 d-none d-lg-block">
+            <div class="sep"></div>
+          </div>
+          <div class="col-lg-7">
+            <p>Le présent site Internet est édité par la société DIGITALKS, SARL enregistrée au RCS sous le numéro 819 291 865 – dont le siège social est situé 13 rue des jeûneurs - 75002 PARIS.</p>
+            <p>Pour toute demande d'informations ou renseignements concernant nos services, vous pouvez nous adresser un e-mail à contact@digitalks.fr.</p>
+            <p>Site internet hébergé par la OVH SAS, 2 rue Kellermann 59100 Roubaix FRANCE.</p>
+            <p>Copyright ©2020 Tous droits réservés</p>
           </div>
         </div>
       </div>
