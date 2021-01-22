@@ -81,11 +81,24 @@ strong {
   height: 100px;
 }
 
+.landing p {
+  color: #174195;
+}
+
+.landing .c-heading {
+  color: #174195;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.landing section {
+  padding: 50px 0;
+}
+
 .landing .hero {
   background-image: url("/assets/hero-bg.jpg");
   background-size: cover;
   background-position: center top;
-  padding: 50px 0;
 }
 
 .landing .hero .formations-gratuites p {
@@ -130,6 +143,57 @@ strong {
 
 .landing .hero .teste-eligibilite__title aside {
   font-size: 20px;
+}
+
+.landing .meilleur-allie {
+  background-image: url("/assets/meilleur-allie-bg.jpg");
+  background-size: cover;
+  background-position: center left;
+}
+
+.landing .les-formations {
+  background-image: url("/assets/les-formations.jpg");
+  background-size: cover;
+  background-position: top right;
+}
+
+.landing .les-formations ul {
+  margin-top: 40px;
+  color: #174195;
+}
+
+.landing .les-formations ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.landing .les-formations ul li::before {
+  content: url("/assets/icons8-checked.svg");
+  background-color: #174195;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+
+.landing .les-formations ul li h3 {
+  font-weight: 700;
+  font-size: 25px;
 }
 
 .formulaire__block {
